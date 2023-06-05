@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        String str = " -importkeystore true - srckeystore kafka.jks -destkeystore kafka.p12 -deststoretype PKCS12";
+        String str = " -importkeystore true -srckeystore kafka.jks -destkeystore kafka.p12 -deststoretype PKCS12";
 
         Map<String, String> parameters = Arrays.stream(str.split("\s+-"))
             .filter(s -> !s.isEmpty())
